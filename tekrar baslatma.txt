@@ -1,0 +1,10 @@
+fcc-claude ile sohbet basliyor
+
+http://127.0.0.1:8082/admin  bu yontim konsolu
+
+1- taskkill /F /IM fcc-server.exe /IM fcc-claude.exe /IM node.exe /T
+2- C:\Users\ahmet\.local\bin\uv.exe run python server.py --host 127.0.0.1 --port 8082
+3- set ANTHROPIC_BASE_URL=http://127.0.0.1:8082
+set ANTHROPIC_AUTH_TOKEN=freecc
+claude
+calisti

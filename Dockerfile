@@ -1,28 +1,29 @@
-# Free Claude Code - Docker Image
-# Updated: 2026-05-22 to force Railway rebuild
+# Telegram Claude Bot - Railway Deployment
+# Build date: 2026-05-22
 FROM python:3.14-slim
 
-# Sistem bağımlılıkları
-RUN apt-get update && apt-get install -y \
-    gcc \
-    g++ \
-    && rm -rf /var/lib/apt/lists/*
-
-# Çalışma dizini
+# Set working directory first
 WORKDIR /app
 
-# Python bağımlılıkları
-COPY requirements.txt .
+# Install system dependencies
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends gcc g++ && \
+    rm -rf /var/lib/apt/lists/*
+
+# Copy and install Python dependencies
+COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Tüm dosyaları kopyala
-COPY . .
+# Copy application files
+COPY . ./
 
-# Debug: Dosyaların kopyalandığını kontrol et
-RUN ls -la /app && echo "=== server.py exists? ===" && ls -la /app/server.py
+# Verify files are copied (debug)
+RUN echo "=== Files in /app ===" && ls -la && \
+    echo "=== Checking server.py ===" && \
+    test -f server.py && echo "server.py exists!" || echo "ERROR: server.py NOT FOUND!"
 
-# Port (Railway sets this dynamically)
+# Expose port
 EXPOSE 8082
 
-# Başlatma komutu - Python script reads PORT from environment
+# Start command
 CMD ["python", "server.py"]

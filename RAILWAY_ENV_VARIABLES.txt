@@ -1,0 +1,114 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║          🚂 RAILWAY - ENVIRONMENT VARIABLES                          ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+
+Railway Dashboard → Variables sekmesine git ve aşağıdaki değişkenleri
+TEK TEK ekle. Her satırı kopyala-yapıştır yap.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📋 TEMEL AYARLAR (3 değişken)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Variable Name: MESSAGING_PLATFORM
+Value: telegram
+
+Variable Name: HOST
+Value: 0.0.0.0
+
+Variable Name: FCC_OPEN_BROWSER
+Value: false
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📱 TELEGRAM AYARLARI (2 değişken)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Variable Name: TELEGRAM_BOT_TOKEN
+Value: 8945990527:AAGDi5yqWo75vNVMv1n0LYkvsVDsHvxJSAk
+
+Variable Name: ALLOWED_TELEGRAM_USER_ID
+Value: 7701576435
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  🤖 AI MODEL AYARLARI (2 değişken)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Variable Name: NVIDIA_NIM_API_KEY
+Value: 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
+
+Variable Name: MODEL
+Value: nvidia_nim/z-ai/glm-5.1
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  🔐 GÜVENLİK (1 değişken)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Variable Name: ANTHROPIC_AUTH_TOKEN
+Value: freecc
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ⚡ PERFORMANS AYARLARI (4 değişken)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Variable Name: ENABLE_MODEL_THINKING
+Value: true
+
+Variable Name: PROVIDER_RATE_LIMIT
+Value: 1
+
+Variable Name: PROVIDER_RATE_WINDOW
+Value: 3
+
+Variable Name: PROVIDER_MAX_CONCURRENCY
+Value: 5
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ⏱️ TIMEOUT AYARLARI (3 değişken)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Variable Name: HTTP_READ_TIMEOUT
+Value: 300
+
+Variable Name: HTTP_WRITE_TIMEOUT
+Value: 60
+
+Variable Name: HTTP_CONNECT_TIMEOUT
+Value: 60
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📊 TOPLAM: 15 DEĞIŞKEN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Tüm değişkenleri ekledikten sonra Railway otomatik olarak uygulamayı
+yeniden deploy edecek.
+
+"Deployments" sekmesinden ilerlemeyi izle.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✅ KONTROL LİSTESİ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Tüm değişkenleri ekledikten sonra kontrol et:
+
+□ MESSAGING_PLATFORM = telegram
+□ TELEGRAM_BOT_TOKEN = 8945990527:...
+□ ALLOWED_TELEGRAM_USER_ID = 7701576435
+□ NVIDIA_NIM_API_KEY = nvapi-DG4hh57...
+□ MODEL = nvidia_nim/z-ai/glm-5.1
+□ FCC_OPEN_BROWSER = false
+□ HOST = 0.0.0.0
+
+Toplam 15 değişken eklenmiş olmalı.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

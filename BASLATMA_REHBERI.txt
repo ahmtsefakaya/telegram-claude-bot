@@ -1,0 +1,184 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║          🤖 TELEGRAM BOT BAŞLATMA REHBERİ - HIZLI BAŞLANGIÇ         ║
+║                                                                      ║
+╔══════════════════════════════════════════════════════════════════════╗
+
+
+┌──────────────────────────────────────────────────────────────────────┐
+│                                                                      │
+│  ✅ SİSTEM HAZIR! Yapılandırma tamamlandı.                          │
+│                                                                      │
+└──────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📱 TELEGRAM'DAN KULLANMAK İÇİN 3 ADIM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ADIM 1: Botu Başlat
+  ────────────────────────────────────────────────────────────────────
+  
+  Aşağıdaki 3 seçenekten BİRİNİ seçin:
+  
+  
+  🔵 SEÇENEK A: Basit Başlatma (Test için)
+  ────────────────────────────────────────────────────────────────────
+  
+     Çift tıkla → telegram_bot_baslat.bat
+     
+     • Hemen başlar
+     • Pencere açık kaldığı sürece çalışır
+     • Test için idealdir
+  
+  
+  🟢 SEÇENEK B: Otomatik Yeniden Başlatma (Günlük Kullanım)
+  ────────────────────────────────────────────────────────────────────
+  
+     Çift tıkla → telegram_bot_surekli.bat
+     
+     • Kapansa bile otomatik yeniden başlar
+     • Daha güvenilir
+     • Günlük kullanım için önerilir
+  
+  
+  🟣 SEÇENEK C: Windows Servisi (7/24 Kesintisiz)
+  ────────────────────────────────────────────────────────────────────
+  
+     Sağ tıkla → telegram_bot_servis_ps.ps1
+     → "PowerShell ile Çalıştır"
+     → "Yönetici olarak çalıştır" onaylayın
+     
+     • Bilgisayar açıldığında otomatik başlar
+     • Arka planda çalışır (pencere yok)
+     • En güvenilir yöntem
+     • 7/24 kesintisiz çalışma
+  
+  
+  ADIM 2: Telegram'ı Aç
+  ────────────────────────────────────────────────────────────────────
+  
+     1. Telegram uygulamasını aç
+     2. Botunu bul (BotFather'dan aldığın username)
+     3. /start komutunu gönder
+  
+  
+  ADIM 3: Soru Sor!
+  ────────────────────────────────────────────────────────────────────
+  
+     Artık doğrudan mesaj gönderebilirsin:
+     
+     "Merhaba, sen kimsin?"
+     "Python'da bir hesap makinesi yaz"
+     "React ile todo list nasıl yapılır?"
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  🎯 HIZLI ERİŞİM LİNKLERİ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  📊 Admin Panel (Bot çalışırken):
+     http://127.0.0.1:8082/admin
+     
+     • Model değiştir
+     • API anahtarı güncelle
+     • Provider test et
+     • Ayarları doğrula
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📋 MEVCUT YAPILANDIRMA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ✅ Telegram Bot Token: Yapılandırılmış
+  ✅ İzinli Kullanıcı ID: 7701576435
+  ✅ NVIDIA NIM API Key: Yapılandırılmış
+  ✅ AI Model: nvidia_nim/z-ai/glm-5.1
+  ✅ Port: 8082
+  ✅ Auth Token: freecc
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  🛠️ YARDIMCI DOSYALAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  telegram_bot_baslat.bat          → Basit başlatma
+  telegram_bot_surekli.bat         → Otomatik yeniden başlatma
+  telegram_bot_servis_ps.ps1       → Windows servisi kurulum
+  telegram_bot_durdur.bat          → Tüm süreçleri durdur
+  
+  baslangica_ekle.bat              → Başlangıç klasörüne ekle
+  baslangictan_kaldir.bat          → Başlangıçtan kaldır
+  
+  telegram_bot_servis_kaldir.bat   → Servisi kaldır
+  
+  HIZLI_BASLANGIC.txt              → Bu dosya
+  README_TR.md                     → Detaylı rehber
+  TELEGRAM_BOT_KULLANIM.md         → Kullanım kılavuzu
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ⚠️ SORUN GİDERME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Bot yanıt vermiyor:
+  ────────────────────────────────────────────────────────────────────
+     1. telegram_bot_durdur.bat çalıştır
+     2. 10 saniye bekle
+     3. telegram_bot_baslat.bat ile yeniden başlat
+  
+  
+  "Port zaten kullanımda" hatası:
+  ────────────────────────────────────────────────────────────────────
+     1. telegram_bot_durdur.bat çalıştır
+     2. Komut satırında: netstat -ano | findstr :8082
+     3. Bulunan PID'yi sonlandır: taskkill /F /PID [pid]
+     4. Yeniden başlat
+  
+  
+  NVIDIA API hatası:
+  ────────────────────────────────────────────────────────────────────
+     1. https://build.nvidia.com/settings/api-keys
+     2. Yeni anahtar oluştur
+     3. Admin panelden güncelle
+     4. "Validate" ve "Apply" tıkla
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💡 İPUÇLARI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  • Uzun görevlerde (kod yazma) sabırlı ol, 30-60 saniye sürebilir
+  
+  • Farklı AI modelleri denemek için admin paneli kullan
+  
+  • Ses notları göndermek için .env dosyasında:
+    VOICE_NOTE_ENABLED=true
+  
+  • Log dosyaları: c:\Users\ahmet\.fcc\logs\
+  
+  • Yapılandırma: free-claude-code\.env
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  🎉 HAZIR!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Şimdi yapman gerekenler:
+  
+  1. ✅ telegram_bot_surekli.bat dosyasına çift tıkla
+  2. ✅ Telegram'dan botuna /start gönder
+  3. ✅ Soru sormaya başla!
+  
+  
+  Sürekli aktif olması için (önerilen):
+  → telegram_bot_servis_ps.ps1 (yönetici olarak çalıştır)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  İyi kullanımlar! 🚀
+  
+  Detaylı bilgi: README_TR.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

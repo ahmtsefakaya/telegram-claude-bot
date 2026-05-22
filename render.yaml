@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: free-claude-code-telegram-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT --timeout-graceful-shutdown 5
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.14.0
+      - key: MESSAGING_PLATFORM
+        value: telegram
+      - key: HOST
+        value: 0.0.0.0
+      - key: FCC_OPEN_BROWSER
+        value: false
+      # Aşağıdaki değerleri Render dashboard'dan ekleyin:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: ALLOWED_TELEGRAM_USER_ID
+        sync: false
+      - key: NVIDIA_NIM_API_KEY
+        sync: false
+      - key: MODEL
+        value: nvidia_nim/z-ai/glm-5.1
+      - key: ANTHROPIC_AUTH_TOKEN
+        value: freecc

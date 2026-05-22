@@ -22,6 +22,12 @@ RUN echo "=== Files in /app ===" && ls -la && \
     echo "=== Checking server.py ===" && \
     test -f server.py && echo "server.py exists!" || echo "ERROR: server.py NOT FOUND!"
 
+# Create workspace directories
+RUN mkdir -p /tmp/.fcc/agent_workspace && \
+    mkdir -p /tmp/workspace && \
+    chmod -R 777 /tmp/.fcc && \
+    chmod -R 777 /tmp/workspace
+
 # Expose port
 EXPOSE 8082
 

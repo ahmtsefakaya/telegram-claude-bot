@@ -17,12 +17,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Uygulama dosyaları
 COPY . .
 
-# Port
-EXPOSE 8080
+# Port (Railway sets this dynamically)
+EXPOSE 8082
 
-# Healthcheck
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-  CMD python -c "import httpx; httpx.get('http://localhost:8080/health', timeout=5.0)"
-
-# Başlatma komutu
-CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8080", "--timeout-graceful-shutdown", "5"]
+# Başlatma komutu - Python script reads PORT from environment
+CMD ["python", "server.py"]

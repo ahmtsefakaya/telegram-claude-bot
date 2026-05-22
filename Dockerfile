@@ -1,4 +1,5 @@
 # Free Claude Code - Docker Image
+# Updated: 2026-05-22 to force Railway rebuild
 FROM python:3.14-slim
 
 # Sistem bağımlılıkları
